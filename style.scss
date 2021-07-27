@@ -1,0 +1,96 @@
+@mixin flexDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121e1f;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.main-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 65vh 1fr;
+    grid-template-areas:
+        "img calc"
+        "h1 h1"
+    ;
+}
+
+h1 {
+    @include flexDisplay();
+    grid-area: h1;
+}
+
+#big-image {
+    justify-self: center;
+    padding-left: 6vh;
+    @include flexDisplay();
+    grid-area: img;
+    height: 70vh;
+}
+
+.calc {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    grid-area: calc;
+    height: auto;
+    border-radius: 20px;
+    width: 80%;
+    background-color: rgb(95, 9, 95);
+}
+
+select, input {
+    margin: 10px;
+    height: 1.8rem;
+}
+
+label {
+    justify-self: center;
+    align-self: center;
+    margin: 2px 0 0 2px;
+}
+
+label:first-child {
+    margin-top: 10px;
+}
+
+/////////////////////// COMMENT ///////////////////////////////////
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.comment-box {
+    display: grid;
+    overflow: hidden;
+    grid-template-rows: 8vh 35vh;
+    grid-template-columns:  1fr;
+    border-radius: 20px;
+    margin: 10px;
+    width: 45vh;
+    height: 45vh;
+    background-color: seagreen;
+    color: #12121f;
+    .user-tag {
+        display: flex;
+        flex-direction: column;
+        width: 45vh;
+        height: 8vh;
+        background-color: silver;
+        justify-items: center;
+        align-items: center;
+    }
+}
