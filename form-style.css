@@ -1,0 +1,70 @@
+:root {
+  font-family: "Lato", "Open Sans", "Helvetica", "Arial", "Sans Serif";
+  line-height: 150%;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background-color: #0001;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  z-index: 10;
+  position: relative;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6px 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px #0001;
+}
+form label {
+  white-space: nowrap;
+  text-align: right;
+}
+form .btns {
+  padding-top: 20px;
+  grid-column: 2/3;
+  display: flex;
+  gap: 10px;
+}
+form .btns * {
+  border: 0;
+  width: 100%;
+  display: block;
+  padding: 6px 10px;
+  color: white;
+}
+form .btns :first-of-type {
+  background-color: #269dd9;
+}
+form .btns :last-of-type {
+  background-color: #ff9500;
+}
+form .btns :hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+  form label {
+    text-align: left;
+    padding-top: 10px;
+  }
+  form .btns {
+    grid-column: 1/2;
+  }
+}
+
+/*# sourceMappingURL=form-style.css.map */

@@ -29,10 +29,23 @@ input, select {
 	.calc {
 		display: flex;
 		flex-direction: column;
-    
+
+		a {
+			
+			button{
+				margin-top: 15px;
+				background-color: #fff3;
+				border: 1px solid;
+				border-radius: 5px;
+				width: 100%;
+				cursor: pointer;
+			}
+		}	
+
         .date {
             margin-top: 10px;
             display: flex;
+			align-items: flex-end;
             gap: 20px;
             div {
                 width: 100%;

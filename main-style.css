@@ -1,0 +1,100 @@
+:root {
+  font-family: "Lato", "Open Sans", "Helvetica", "Arial", "Sans Serif";
+  line-height: 150%;
+  font-size: 14px;
+}
+
+body {
+  background-color: #4095bf;
+  margin: 0 auto;
+  padding: 40px;
+  display: grid;
+  max-width: 1200px;
+  gap: 40px;
+}
+
+input, select {
+  background-color: #fff3;
+  border: none;
+}
+
+.header {
+  display: grid;
+  gap: 20px;
+}
+.header #big-image {
+  width: 100%;
+  height: auto;
+}
+.header .calc {
+  display: flex;
+  flex-direction: column;
+}
+.header .calc a button {
+  margin-top: 15px;
+  background-color: #fff3;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.header .calc .date {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+.header .calc .date div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment {
+  background-color: #fff3;
+  border-radius: 6px;
+  padding: 30px;
+  display: grid;
+  grid-template-areas: "avatar name" "avatar rating" "content content";
+  gap: 20px;
+  grid-template-columns: 80px auto;
+  grid-template-rows: 40px 20px auto;
+}
+.comment .avatar {
+  grid-area: avatar;
+}
+.comment .avatar img {
+  width: 100%;
+  border-radius: 100px;
+}
+.comment .name {
+  height: 100%;
+  transform: translate(0, 15px);
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.6rem;
+  grid-area: name;
+}
+.comment .rating {
+  transform: translate(0, -15px);
+  font-size: 0.8rem;
+  height: 100%;
+  grid-area: rating;
+  color: gold;
+}
+.comment .content {
+  grid-area: content;
+}
+
+@media (min-width: 800px) {
+  body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1/span 3;
+  }
+}
+
+/*# sourceMappingURL=main-style.css.map */

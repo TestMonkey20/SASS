@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="form-style.css">
+	<title>Document</title>
+</head>
+<body>
+	
+	<form action="POST">
+
+		<label for="name">Imię:</label>
+		<input type="text" name="name" id="">
+
+		<label for="surname">Nazwisko:</label>
+		<input type="text" name="surname" id="">
+
+		<label for="type-select">Wybierz typ:</label>
+		<select name="type" id="type-select">
+			<option value="null">-</option>
+			<option value="type1">Type1</option>
+			<option value="type2">Type2</option>
+			<option value="type3">Type3</option>
+		</select>
+
+		<label for="car-select">Wybierz markę:</label>
+		<select name="cars" id="car-select">
+			<option value="null">-</option>
+			<option value="car1">Car1</option>
+			<option value="car2">Car2</option>
+			<option value="car3">Car3</option>
+		</select>
+
+		<label for="age-select">Wiek kierowcy:</label>
+		<select name="age" id="age-select">
+			<option value="null">-</option>
+			<option value="age1">18-26</option>
+			<option value="age2">26-50</option>
+			<option value="age3">>50</option>
+		</select>
+
+		<label for="car-age-select">Rok produkcji samochodu:</label>
+		<select name="age" id="car-age-select">
+			<option value="null">-</option>
+			<option value="age1">20XX</option>
+			<option value="age2">20XX</option>
+			<option value="age3">20XX</option>
+		</select>
+
+		<label for="engine-start">Pojemność od:</label>
+		<input type="number" name="engine-start" id="">
+
+		<label for="engine-end">Pojemność do</label>
+		<input type="number" name="engine-end" id="">
+
+		<label for="3doors">3-drzwiowe:</label>
+		<input type="checkbox" name="3doors" id="">
+				
+		<label for="5doors">5-drzwiowe:</label>
+		<input type="checkbox" name="5doors" id="">
+
+		<label for="">OC:</label>
+		<input type="checkbox" name="" id="">
+
+		<label for="">AC:</label>
+		<input type="checkbox" name="" id="">
+
+		<label for="">ASSISTANCE:</label>
+		<input type="checkbox" name="" id="">
+
+		<label for="">NNW:</label>
+		<input type="checkbox" name="" id="">
+
+		<label for="register-date">Pierwsza rejestracja pojazdu:</label>
+		<input type="date" name="register-date" id="register-date">
+
+		<div class="btns">
+			<input type="button" onclick="location.href='main.html'" value="Powrót">
+			<input type="submit" value="Wyślij wniosek"/>
+		</div>
+		
+	</form>
+
+</body>
+</html>
